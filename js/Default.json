@@ -4,7 +4,7 @@
         "chore":["Chore/Bill: ","Sweep Kitchen"],
         "due": ["Due Date: ", ""],
         "amount": ["Amount Due: ", ""],
-        "payto": ["Payable T0: ",""]
+        "payto": ["Payable To: ",""]
 
 
     },
@@ -14,7 +14,7 @@
         "chore":["Chore/Bill: ","Comcast"],
         "due": ["Due Date: ", "05/12/13"],
         "amount": ["Amount Due: ", "56.50"],
-        "payto": ["Payable T0: ","Comcast"]
+        "payto": ["Payable To: ","Comcast"]
 
 
     },
@@ -24,7 +24,7 @@
         "chore":["Chore/Bill: ","PG&E"],
         "due": ["Due Date: ", "07/08/13"],
         "amount": ["Amount Due: ", "13.25"],
-        "payto": ["Payable T0: ","Houston"]
+        "payto": ["Payable To: ","Houston"]
 
 
     },
@@ -34,7 +34,7 @@
         "chore":["Chore/Bill: ","Do something helpful"],
         "due": ["Due Date: ", ""],
         "amount": ["Amount Due: ", ""],
-        "payto": ["Payable T0: ","The House"]
+        "payto": ["Payable To: ","The House"]
 
     },
 
@@ -43,7 +43,7 @@
         "chore":["Chore/Bill: ","More Chores"],
         "due": ["Due Date: ", "07/13/13"],
         "amount": ["Amount Due: ", "34.20"],
-        "payto": ["Payable T0: ","Someone"]
+        "payto": ["Payable To: ","Someone"]
 
 
     },
@@ -53,7 +53,7 @@
         "chore":["Chore/Bill: ","Dance Party"],
         "due": ["Due Date: ", "07/04/13"],
         "amount": ["Amount Due: ", "200.00"],
-        "payto": ["Payable T0: ","The House"]
+        "payto": ["Payable To: ","The House"]
 
 
     },
@@ -63,7 +63,7 @@
         "chore":["Chore/Bill: ","Cook THE FEAST!!!"],
         "due": ["Due Date: ", ""],
         "amount": ["Amount Due: ", ""],
-        "payto": ["Payable T0: ",""]
+        "payto": ["Payable To: ",""]
 
 
     }

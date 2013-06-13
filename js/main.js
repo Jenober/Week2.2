@@ -170,6 +170,7 @@ var saveEdits = function(key){
 };
 
 var getXML = function(choreDiv){
+
     console.log('getXML called!');
     choreDiv.append('<ul data-role="listview" data-theme="a" id="choreList"></ul>');
 
@@ -200,9 +201,10 @@ var getXML = function(choreDiv){
 
                 listItem = "Payable To: "+ doc.find('payto').text();
                 choreList.append('<li>'+listItem+'</li>');
+                choreList.append('<p></p>')
 
             });
-            $('choreList').listview('refresh');
+            //$('choreList').listview('refresh');
 
 
         },
@@ -219,6 +221,34 @@ var getXML = function(choreDiv){
 };
 
 var getJSON = function(choreDiv){
+    console.log('getXML called!');
+    choreDiv.append('<ul data-role="listview" data-theme="a" id="choreList"></ul>');
 
+    $.ajax({
+        url: 'js/default.json',
+        type: 'GET',
+        dataType: 'json',
+        success: function(json){
+            console.log("AJAX call successful");
+            console.log(json);
+            var chorelist = $('#choreList');
+            for(var key in json){
+                var each = json[key];
+                for (var chore in each){
+                    chorelist.append("<li>"+each[chore][0]+" "+ each[chore][1]+"</li>")
+                }
+                chorelist.append('<p></p>');
+            }
+
+
+        },
+        error: function(error, parsererror){
+            alert("someting went wrong!");
+            console.log(error);
+            console.log(parsererror);
+        }
+
+
+    })
 
 };
