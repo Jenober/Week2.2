@@ -32,7 +32,7 @@
     "872":{
         "who":["Responsible Party: ","Extra Data 1"],
         "chore":["Chore/Bill: ","Do something helpful"],
-        "due": ["Due Date: ", ""],
+        "due": ["Due Date: ", "07/06/13"],
         "amount": ["Amount Due: ", ""],
         "payto": ["Payable To: ","The House"]
 

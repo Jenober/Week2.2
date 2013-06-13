@@ -225,7 +225,7 @@ var getJSON = function(choreDiv){
     choreDiv.append('<ul data-role="listview" data-theme="a" id="choreList"></ul>');
 
     $.ajax({
-        url: 'js/default.json',
+        url: 'js/Default.json',
         type: 'GET',
         dataType: 'json',
         success: function(json){
