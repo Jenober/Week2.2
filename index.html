@@ -32,6 +32,8 @@ HTML5 Template
 <!--    //Header  -->
             <div data-role="header">
                 <h1>Current Items</h1>
+                <button id="loadXML" class='xmlBtn'>Load XML Data</button>
+                <button id="loadJSON" class="jsonBtn">Load JSON Data</button>
             </div>
 
 <!--    //Content -->
@@ -93,16 +95,16 @@ HTML5 Template
 
 <!--  addNew page -->
         <div data-role="page" data-id="addNew" id="addNew" data-theme="a">
+
             <!--    //Header  -->
             <div data-role="header">
-                <h1>Current Items</h1>
+                <h1>Chore/Bill Keeper</h1>
             </div>
-
             <!--    //Content -->
             <div data-role="content">
                 <!-- Form -->
                 <div data-role="fieldcontain">
-                    <h1>Add a new Chore/Bill</h1>
+                    <h1>Add a Chore/Bill</h1>
                     <h4>Fill out the form below</h4>
 
                 </div>
@@ -144,6 +146,63 @@ HTML5 Template
 
                 </div>
             </div>
+
+        </div>
+
+<!--  edit page -->
+        <div data-role="page" data-id="editPage" id="editPage" data-theme="a">
+            <!--    //Header  -->
+            <div data-role="header">
+                <h1>Chore/Bill Keeper</h1>
+            </div>
+
+            <!--    //Content -->
+            <div data-role="content">
+                <!-- Form -->
+                <div data-role="fieldcontain">
+                    <h1>Edit a Chore/Bill</h1>
+                    <h4>Make your changes below.</h4>
+
+                </div>
+                <h2>Info: </h2>
+
+                <form action="" method="post" id="editForm">
+                    <fieldset>
+                        <label for="inputWho">Responsible Party: </label>
+                        <input data-theme="a" id="editWho" name="inputWho" type="text" placeholder="Enter a Name" class="required">
+
+                        <label for="inputChore">Chore/Bill: </label>
+                        <input data-theme="a" id="editChore" name="inputChore" type="text" placeholder="Name of Chore/Bill" class="required">
+
+                        <label for="inputDueDate">Due Date: </label>
+                        <input data-theme="a" id="editDueDate" name="inputDueDate" type="date" placeholder="MM/DD/YY">
+
+                        <label for="inputAmount">Amount Due (Numbers Only! ex: 99.99): </label>
+                        <input data-theme="a" id="editAmount" name="inputAmount" type="number" placeholder="EXAMPLE: 123.45">
+
+                        <label for="inputPayable">Payable To: </label>
+                        <input data-theme="a" id="editPayable" name="inputPayable" type="text" placeholder="Enter a Name">
+
+                    </fieldset>
+                    <input type="submit" value="Save" data-inline="true">
+                    <input type="reset" value="Clear Form" data-inline="true" data-mini="true">
+
+
+                </form>
+
+            </div>
+            <!--    //Footer  -->
+            <div data-role="footer" data-position="fixed" data-id='footer'>
+
+                <div data-role="navbar" data-iconpos="top">
+
+                    <ul>
+                        <li><a href="#homePage" data-icon='home' data-role="button">Home</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
 
         </div>
 
